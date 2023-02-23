@@ -5,5 +5,5 @@ directory = "functions/"
 command = """
 mkdir functions &&
 cargo build --release &&
-cp target/release/fitnes-tracking functions/
+cp target/release/fitness-tracking functions/
 """
