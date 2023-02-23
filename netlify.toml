@@ -1,0 +1,9 @@
+[functions]
+directory = "functions/"
+
+[build]
+command = """
+mkdir functions &&
+cargo build --release &&
+cp target/release/fitnes-tracking functions/
+"""
