@@ -4,6 +4,6 @@ directory = "functions/"
 [build]
 command = """
 mkdir functions &&
-cargo build --release &&
-cp target/release/fitness-tracking functions/
+cargo zigbuild --release --target x86_64-unknown-linux-gnu.2.26 &&
+cp target/x86_64-unknown-linux-gnu/release/fitness-tracking functions/
 """
